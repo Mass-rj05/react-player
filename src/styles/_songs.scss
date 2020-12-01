@@ -17,3 +17,11 @@
         font-size: 1rem;
     }
 }
+@media screen and (max-width: 765px)
+{
+    .song-container{
+        img{
+            width: 60%;
+        }
+    }
+}

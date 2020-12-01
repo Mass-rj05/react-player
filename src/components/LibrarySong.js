@@ -11,13 +11,12 @@ const LibrarySong = ({
   const songSelectHandler = async () => {
     const selectedSong = songs.filter((state) => state.id === song.id);
     await setCurrentSong(song);
-
     //Add active state
-    setSongs(
+    await setSongs(
       songs.map((targetSong) => {
         return {
           ...targetSong,
-          active: targetSong.id === currentSong.id,
+          active: targetSong.id === song.id,
         };
       })
     );

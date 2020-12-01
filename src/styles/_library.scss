@@ -21,12 +21,14 @@
     align-items: center;
     padding: 1rem 2rem 1rem 2rem;
     cursor: pointer;
+    transition: background 0.5s ease;
     img{
         width: 30%;
     }
     &:hover
     {
-        background:rgb(222, 222, 200);
+        background: rgb(161, 236, 243);
+
     }
 }
 .song-description{
@@ -60,10 +62,17 @@
 }
 
 .selected{
-    background: violet;
+    background: rgb(96, 196, 206);
 }
 
 .active-library{
     transform:translateX(0);
     opacity: 1;
+}
+
+@media screen and (max-width:768px)
+{
+   .library{
+       width: 100%;
+   }
 }
